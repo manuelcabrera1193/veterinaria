@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Pet Clinic | Contacts</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jquery-1.7.1.min.js"></script>
+<script src="js/superfish.js"></script>
+<script>
+$(function(){
+	function equalHeight(group) {
+		var tallest = 0;
+		group.each(function() {
+			var thisHeight = $(this).height();
+			if(thisHeight > tallest) {
+				tallest = thisHeight;
+			}
+		});
+		group.height(tallest);
+	}	
+	equalHeight($(".box-1 .inner"));
+})
+</script>
+<!--[if lt IE 9]>
+<script src="js/html5.js"></script>
+<link rel="stylesheet" href="css/ie.css"> 
+<![endif]-->
+</head>
+<body>
+<!-- Header -->
+<header>
+  <div class="inner">
+    <h1 class="logo"><a href="index.html">Clinica de Mascotas</a></h1>
+    <div class="fright">
+      <div class="header-meta">
+      <!-- <form action="#" id="search-form" method="post">
+          <input type="text" onBlur="if(this.value==''){this.value='search'}" onFocus="if(this.value=='search'){this.value=''}" value="search" name="search">
+          <a class="search-form-submit"></a>
+        </form>-->
+        <div class="col-elem"> ¿Tiene Problemas con su mascotas?<br>
+          Llamenos ahora mismo: <span class="phone"> 222 -7788 </span> 
+          <br><span class="LOGIN"> <a href="login.html">LOGIN </a></span></br>
+        </div>
+      </div>
+      <nav>
+        <ul class="sf-menu">
+          <!--<li class="current"><a href="index.html">Menu</a></li>-->
+          <li><a href="about.html">Nosotros</a></li>
+          <li> <a href="#">Servicios</a>
+            <ul>
+              <li><a href="#">Accesorios Gatos</a></li>
+              <li><a href="#">Accesorios Perros</a></li>
+              <li> <a href="#">Accesorios varios</a>
+                <ul>
+                  <li><a href="#">Aviares</a></li>
+                  <li><a href="#">acuarios</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Citas</a></li>
+            </ul>
+          </li>
+          <li><a href="#">links</a></li>
+          <li><a href="contacts.html">Contactos</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="clear"></div>
+  </div>
+</header>
+<!-- Content -->
+<section id="content">
+ <div class="container_24">
+    <div class="">
+     <!-- <article class="grid_6">
+        <div class="box-1">
+          <div class="inner">
+            <h3>Microchip implant</h3>
+            <p> Vivamus hendrerit mauris ut dui. gravida ut viverra lectus tincidunt. Cras mattis tempor eros nec tristique. </p>
+            <div class="btn-container">
+              <div class="button-box"> <a href="#" class="button">read more</a> </div>
+            </div>
+          </div>
+        </div>
+      </article> 
+      <article class="grid_6">
+        <div class="box-1">
+          <div class="inner">
+            <h3>Ultrasound</h3>
+            <p class="p0"> <strong class="str-1"> Vivamus hendrerit mauris ut dui gravida ut viverra </strong> </p>
+            <p> Cras mattis tempor eros nec tristique. Sed sed felis arcu, vel vehicula augue. Maecenas faucibus sagittis. cursus. </p>
+            <div class="btn-container">
+              <div class="button-box"> <a href="#" class="button">read more</a> </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="grid_6">
+        <div class="box-1">
+          <div class="inner">
+            <h3>Transport service</h3>
+            <p> Vivamus hendrerit mauris ut dui. gravida ut viverra lectus tincidunt. Cras mattis tempor eros nec tristique. </p>
+            <div class="btn-container">
+              <div class="button-box"> <a href="#" class="button">read more</a> </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="grid_6">
+        <div class="box-1">
+          <div class="inner">
+            <h3>Vaccinations</h3>
+            <p class="p0"> <strong class="str-1"> Vivamus hendrerit mauris ut gravida ut viverra </strong> </p>
+            <p> Cras mattis tempor eros nec tristique. Sed sed felis arcu, vel vehicula augue. </p>
+            <div class="btn-container">
+              <div class="button-box"> <a href="#" class="button">read more</a> </div>
+            </div>
+          </div>
+        </div>
+      </article>-->
+     <!-- <div class="clear"></div>-->
+      <div class="wrapper">
+        <article class="grid_7 suffix_1">
+          <h2>Info de contacto:</h2>
+          <div class="map-container img-box">
+            <iframe src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Brooklyn,+New+York,+NY,+United+States&amp;aq=0&amp;sll=37.0625,-95.677068&amp;sspn=61.282355,146.513672&amp;ie=UTF8&amp;hq=&amp;hnear=Brooklyn,+Kings,+New+York&amp;ll=40.649974,-73.950005&amp;spn=0.01628,0.025663&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
+          </div>
+          <strong class="str-4">Pet clinic</strong>
+          <dl class="adress">
+            <dt>8901 Av. La marina, San Miguel, Peru</dt>
+            <dd><span>Telefono:</span><strong>959 603 6035</strong></dd>
+            <!--<dd><span>Fax:</span><strong>+1 504 889 9898</strong></dd>-->
+            <dd><span>Email:</span><a href="#">mail@petclinic.org</a></dd>
+          </dl>
+        </article>
+        <article class="grid_16">
+          <h2>Formulario de Contacto:</h2>
+          <form action="#" id="contact-form" method="post">
+            <fieldset>
+              <label class="name"> <span>Nombre Completo:</span>
+                <input type="text">
+              </label>
+              <label class="email"> <span>Email:</span>
+                <input type="email">
+              </label>
+              <label class="message"> <span>Mensaje:</span>
+                <textarea></textarea>
+              </label>
+              <div class="btns"> <a class="button">Clear</a> <a class="button">Send</a> </div>
+            </fieldset>
+          </form>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Footer -->
+<footer>
+  <div class="copyright"> &copy; 2022 <strong class="footer-logo">Pet clinic</strong>
+  
+  </div>
+  <ul class="social-list">
+    <li><a href="#"><img src="images/social-link-1.jpg" alt=""></a></li>
+    <li><a href="#"><img src="images/social-link-2.jpg" alt=""></a></li>
+    <li><a href="#"><img src="images/social-link-3.jpg" alt=""></a></li>
+    <li><a href="#"><img src="images/social-link-4.jpg" alt=""></a></li>
+  </ul>
+</footer>
+</body>
+</html>
